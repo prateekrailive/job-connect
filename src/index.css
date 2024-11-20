@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800 bg-[#EDEEF0];
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .vk-card {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .vk-button-primary {
+    @apply bg-[#0077FF] hover:bg-[#0066CC] text-white px-4 py-2 rounded-md transition-colors;
+  }
+  
+  .vk-button-secondary {
+    @apply border border-[#0077FF] text-[#0077FF] px-4 py-2 rounded-md hover:bg-[#E5F0FF] transition-colors;
+  }
+  
+  .vk-input {
+    @apply w-full px-4 py-2 border border-gray-200 rounded-md focus:ring-2 focus:ring-[#0077FF] focus:border-transparent outline-none transition-all;
+  }
+}
